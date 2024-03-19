@@ -1,8 +1,14 @@
+import Catalogue from "../../components/catalogue/Catalogue"
+import Search from "../../components/search/Search"
 import "./Home.css"
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className="containerHome">
+    <Search></Search>
+    <Catalogue/>
+
+    </div>
   )
 }
 
