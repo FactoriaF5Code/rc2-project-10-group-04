@@ -1,0 +1,24 @@
+.searchContainer{
+position: relative;
+display: flex;
+align-items: center;
+margin-top: 5vh;
+}
+
+.searchInput{
+width: 70vw;
+height: 7vh;
+padding-left: 2vw;
+
+}
+
+.searchInput::placeholder{
+    font-size: 1.3rem;
+}
+.searchIcon{
+position: absolute;
+right: 40px;
+cursor: pointer;
+
+
+}
