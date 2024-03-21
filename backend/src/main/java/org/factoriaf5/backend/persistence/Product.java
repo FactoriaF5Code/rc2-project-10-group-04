@@ -17,6 +17,17 @@ public class Product {
     private double price;
     private String img;
 
+    public Product(String name, String description, double price, String img) {
+        super();
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.img = img;
+    }
+
+    public Product() {
+    }
+
     public int getId() {
         return Id;
     }
