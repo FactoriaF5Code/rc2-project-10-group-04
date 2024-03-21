@@ -61,3 +61,12 @@
   font-family: Pathway Gothic One;
   font-size: 2.5rem;
 }
+
+.products img{
+  width: 20vw;
+}
+
+.products{
+  display: flex;
+ flex-wrap: wrap;
+}
