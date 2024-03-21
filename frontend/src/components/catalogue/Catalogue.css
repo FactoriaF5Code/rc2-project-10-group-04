@@ -1,3 +1,26 @@
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.searchInput {
+  width: 70vw;
+  height: 7vh;
+  padding-left: 2vw;
+  font-size: 1.3rem;
+}
+
+.searchInput::placeholder {
+  font-size: 1.3rem;
+}
+.searchIcon {
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+}
+
 .catalogueContainer {
   width: 70vw;
   background-color: white;
@@ -34,7 +57,7 @@
   z-index: -70;
 }
 .banner h2 {
-  color: #4F4E4E;
+  color: #4f4e4e;
   font-family: Pathway Gothic One;
   font-size: 2.5rem;
 }
