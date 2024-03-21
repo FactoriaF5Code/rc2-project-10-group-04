@@ -30,7 +30,7 @@
   z-index: -80;
 }
 
-.catalogueContainer section {
+.bannerContainer {
   width: 68vw;
   margin: 1vw auto;
 }
@@ -62,11 +62,13 @@
   font-size: 2.5rem;
 }
 
-.products img{
-  width: 20vw;
+.products img {
+  width: 15vw;
+  height: 40vh;
+  object-fit: cover;
 }
 
-.products{
+.products {
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
 }

@@ -24,7 +24,7 @@ function Catalogue() {
         </span>
       </div>
       <div className="catalogueContainer">
-        <section>
+        <section className="bannerContainer">
           <div className="banner">
             <div className="bannerBg">
               <h2>¡Empieza tu transformación hoy mismo!</h2>
