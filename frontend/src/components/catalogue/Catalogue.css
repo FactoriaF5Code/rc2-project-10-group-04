@@ -63,12 +63,14 @@
 }
 
 .products img {
-  width: 15vw;
-  height: 40vh;
+  width: 12.75vw;
+  height: 30vh;
+  margin-top: 2vh;
   object-fit: cover;
 }
 
 .products {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }

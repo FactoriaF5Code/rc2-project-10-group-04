@@ -33,7 +33,7 @@ function Catalogue() {
           <div className="products">
             {filteredData?.map((product) => (
               <div key={product.id}>
-                <section className="container">
+                <section className="containerImg">
                   <section>
                     <img src={product.img} alt={product.name}></img>
                   </section>
