@@ -2,11 +2,12 @@ import "./DetailsProduct.css"
 import { useFetch } from "../../components/catalogue/useFetch";
 import { useState } from "react";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { useParams } from "react-router-dom";
 
 
 
-function DetailsProduct(match) {
-  const productId = match.params.id
+function DetailsProduct() {
+  const productId = useParams();
   const { data } = useFetch(`http://localhost:8080/product/${productId}`);
   const [searchTerm, setSearchTerm] = useState("");
   const filteredData = data?.filter((product) =>
