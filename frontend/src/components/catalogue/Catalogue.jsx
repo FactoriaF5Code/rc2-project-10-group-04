@@ -12,7 +12,7 @@ function Catalogue() {
   );
 
   return (
-    <>
+    <div className="bodyContainer">
       <div className="searchContainer">
         <input
           className="searchInput"
@@ -46,7 +46,7 @@ function Catalogue() {
           </Link>
         </section>
       </div>
-    </>
+    </div>
   );
 }
 
