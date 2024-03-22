@@ -1,0 +1,49 @@
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+  font-family: Helvetica, sans-serif;
+  position: relative;
+}
+
+.detailsImg img {
+  height: 65vh;
+  width: 30vw;
+  object-fit: cover;
+}
+
+.detailsParraf {
+    text-align: justify;
+    margin: 1vh 3vw;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detailsTitle {
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+.detailsPrice {
+    font-size: 1.9rem;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+    color: #bda052;
+}
+
+.detailsDescription {
+    font-size: 1.5rem;
+}
+
+.detailsBtn {
+    background-color: #D4AF4D;
+    width: 15vw;
+    height: 5vh;
+    font-size: larger;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

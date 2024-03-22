@@ -40,11 +40,21 @@ function DetailsProduct() {
               </div>
             </div>
 
-            <div className="products">
+            <div>
               <div key={product.id}>
-                <section className="containerImg">
-                  <section>
+                <section className="details">
+                  <section className="detailsImg">
                     <img src={product.img} alt={product.name}></img>
+                  </section>
+                  <section className="detailsParraf">
+                    <div>
+                      <p className="detailsTitle">{product.name}</p>
+                      <p className="detailsPrice">{product.price} €</p>
+                      <p className="detailsDescription">
+                        {product.description}
+                      </p>
+                    </div>
+                    <button className="detailsBtn">Añadir al carrito</button>
                   </section>
                 </section>
               </div>
