@@ -64,8 +64,8 @@ public class ProductService implements ProductRepository {
 
     @Override
     public Product getById(Integer id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getById'");
+
+     return productRepository.getById(id);
     }
 
     @Override

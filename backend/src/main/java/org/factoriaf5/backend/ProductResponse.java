@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
@@ -23,6 +24,12 @@ public class ProductResponse {
     @GetMapping
     private ResponseEntity<List<Product>> getAllProducts() {
         return ResponseEntity.ok(productService.findAll());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Product> getProductById(@PathVariable Integer id){
+        Product product=productService.getById(id);
+        return ResponseEntity.ok(product);
     }
 
 }
