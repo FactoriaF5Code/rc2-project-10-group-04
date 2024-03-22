@@ -31,19 +31,20 @@ function Catalogue() {
               <h2>¡Empieza tu transformación hoy mismo!</h2>
             </div>
           </div>
-          <Link to={"/details"}>
+
           <div className="products">
             {filteredData?.map((product) => (
-              <div key={product.id}>
+              <div key={product.id}> <Link to={`/details/${product.id}`}>
                 <section className="containerImg">
                   <section>
                     <img src={product.img} alt={product.name}></img>
                   </section>
                 </section>
+              </Link>
               </div>
             ))}
           </div>
-          </Link>
+
         </section>
       </div>
     </div>

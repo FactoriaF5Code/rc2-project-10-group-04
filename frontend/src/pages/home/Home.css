@@ -1,4 +1,4 @@
-.containerHome {
+.containerBg {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -6,7 +6,7 @@
   position: absolute;
 }
 
-.containerHome::before {
+.containerBg::before {
   content: "";
   position: absolute;
   top: 0;

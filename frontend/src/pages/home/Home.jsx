@@ -3,7 +3,7 @@ import "./Home.css"
 
 function Home() {
   return (
-    <div className="containerHome">
+    <div className="containerBg">
    
     <Catalogue/>
 
