@@ -2,6 +2,7 @@ import "./Catalogue.css";
 import { useFetch } from "./useFetch";
 import { useState } from "react";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { Link } from "react-router-dom";
 
 function Catalogue() {
   const { data } = useFetch("http://localhost:8080/product");
@@ -30,6 +31,7 @@ function Catalogue() {
               <h2>¡Empieza tu transformación hoy mismo!</h2>
             </div>
           </div>
+          <Link to={"/details"}>
           <div className="products">
             {filteredData?.map((product) => (
               <div key={product.id}>
@@ -41,6 +43,7 @@ function Catalogue() {
               </div>
             ))}
           </div>
+          </Link>
         </section>
       </div>
     </>
