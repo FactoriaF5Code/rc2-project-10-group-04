@@ -65,7 +65,10 @@ public class ProductService implements ProductRepository {
     @Override
     public Product getById(Integer id) {
 
-     return productRepository.getById(id);
+        Optional<Product> optionalProduct = productRepository.findById(id);
+
+        return optionalProduct.get();
+
     }
 
     @Override
@@ -197,5 +200,5 @@ public class ProductService implements ProductRepository {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'findBy'");
     }
-    
+
 }
